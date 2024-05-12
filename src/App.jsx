@@ -7,12 +7,13 @@ function App() {
   const {
     data,
     cart,
-    setCart,
     addToCart,
     removeFromCart,
     increaseQuantity,
     decreaseQuantity,
-    clearCart
+    clearCart, 
+    isEmpty,
+    cartTotal
   } = useCart();
 
   return (
@@ -23,6 +24,8 @@ function App() {
     increaseQuantity={increaseQuantity}
     decreaseQuantity={decreaseQuantity}
     clearCart={clearCart}
+    isEmpty={isEmpty}
+    cartTotal={cartTotal}
     />
 
     <main className="container-xl mt-5">
